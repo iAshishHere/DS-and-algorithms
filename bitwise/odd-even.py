@@ -1,5 +1,5 @@
 def odd_or_even(n):
-    return (n&(n-1)==0)
+    return (n!=0 & (n&(n-1))==0)
 
 
 res = odd_or_even(9)

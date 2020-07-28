@@ -1,16 +1,8 @@
 def palindrome(word,start,end):
-    if (word[start]!=word[end]):
-        return False
-    else:
-        palindrome(word[start + 1: end - 1], start + 1, end - 1)
-
-
-    if end-start==0:
+    if start >= end:
         return True
+    else:
+        return (word[start] == word[end]) & (palindrome(word, start + 1, end - 1))
 
-
-
-
-
-res = palindrome("abbaa",0,4)
+res = palindrome("abba",0,3)
 print(res)

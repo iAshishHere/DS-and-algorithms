@@ -1,6 +1,4 @@
-
 def mergeSort(arr):
-
     if len(arr) > 1:
         mid = len(arr) // 2
         leftHalf = arr[:mid]
@@ -17,7 +15,7 @@ def mergeSort(arr):
             else:
                 arr[k] = rightHalf[j]
                 j += 1
-            k +=1
+            k += 1
 
         while i < len(leftHalf):
             arr[k] = leftHalf[i]
@@ -30,6 +28,6 @@ def mergeSort(arr):
             j += 1
 
 
-
-arr = [3,4,5,6,1,3,6]
+arr = [3, 4, 5, 6, 1, 3, 6]
 mergeSort(arr)
+print(arr)
